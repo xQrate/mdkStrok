@@ -10,10 +10,13 @@ public class Main {
 
             String text = "Hello gods";
             String[] arr = text.split(" ");
+
             System.out.println("Кол-во слов");
             System.out.println(arr.length);
+
             char ch = 'l';
             int count = text.length() - text.replace(String.valueOf(ch), "").length();
+
             fw.write(text);
             fw.append('\n');
             fw.flush();
